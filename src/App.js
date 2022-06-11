@@ -10,6 +10,7 @@ import 'onsenui/esm/elements/ons-toolbar';
 import 'onsenui/esm/elements/ons-navigator';
 import 'onsenui/esm/elements/ons-alert-dialog';
 import 'onsenui/esm/elements/ons-alert-dialog-button';
+import pic from "../src/assets/diabetes_black.png"
 
 
 import * as Ons from "react-onsenui";
@@ -111,7 +112,9 @@ export const App = () => {
               </div>
             </Ons.AlertDialog>
             <ons-button>button</ons-button>
-          
+
+
+            <img src={pic} />
           </Ons.Page>
         }
         initialRoute={{

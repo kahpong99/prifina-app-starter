@@ -23,11 +23,67 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 8%;
 }
 
 .user-icon {
     width: 80px;
     height: 80px;
-    
 }
 
+.header-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.diabetes-reading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 30%;
+    height: 80px;
+}
+
+.reading-label,
+.reading-unit {
+    font-size: 14px;
+}
+
+.reading-value {
+    font-size: 26px;
+}
+
+.header-borderline {
+    border: 0.01em solid #FFF;
+    height: 80px;
+}
+
+.bot-toolbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    /* position: relative; */
+    overflow: visible;
+    /* border-top: 1px solid rgb(212, 212, 212); */
+    box-shadow: 0px 0px 5px 1px rgb(230, 230, 230);
+}
+
+.diagnose-now {
+    background-color: #2E0249;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blood-icon {
+    width: 40px;
+    height: 40px;
+}

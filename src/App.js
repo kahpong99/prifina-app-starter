@@ -10,11 +10,14 @@ import 'onsenui/esm/elements/ons-toolbar';
 import 'onsenui/esm/elements/ons-navigator';
 import 'onsenui/esm/elements/ons-alert-dialog';
 import 'onsenui/esm/elements/ons-alert-dialog-button';
+import 'onsenui/esm/elements/ons-bottom-toolbar';
+
 import pic from "../src/assets/diabetes_black.png"
 import usericon from '../src/assets/user-icon.png';
+import bloodicon from '../src/assets/blood-icon.png';
 import 'bootstrap/dist/css/bootstrap.css';
 import "../src/assets/style.css";
-
+import Line from "./components/Line.js";
 
 import * as Ons from "react-onsenui";
 //import Image from "./assets/fingerpori.png";
@@ -101,18 +104,44 @@ export const App = () => {
 
                 <img src={usericon} className="user-icon"></img>
               </div>
+
+              <div className="header-info">
+                <div className="diabetes-reading">
+                  <div className="reading-label">Average</div>
+                  <div className="reading-value">100</div>
+                  <div className="reading-unit">mg/dl</div>
+                </div>
+
+                {/* <div className="header-borderline"></div> */}
+
+                <div className="diabetes-reading">
+                  <div className="reading-label">Deviation</div>
+                  <div className="reading-value">30</div>
+                  <div className="reading-unit">mg/dl</div>
+                </div>
+
+                {/* <div className="header-borderline"></div> */}
+
+                <div className="diabetes-reading">
+                  <div className="reading-label">Hyper / Hypo</div>
+                  <div className="reading-value">1 / 0</div>
+                  <div className="reading-unit"></div>
+                </div>
+
+                
+              </div>
           
             </div>
             {console.log(JSON.stringify(user))}
-            <Ons.Row className="justify-content-md-center">
+            {/* <Ons.Row className="justify-content-md-center">
               <Ons.Col className="d-flex align-items-center justify-content-center">
                 <Ons.Button className = "btn btn-secondary btn-sm m-2">
                   Button
                 </Ons.Button>
               </Ons.Col>
-            </Ons.Row>
+            </Ons.Row> */}
 
-            <Ons.AlertDialog>
+            {/* <Ons.AlertDialog>
               <div className="alert-dialog-title">Warning!</div>
               <div className="alert-dialog-content">
                 An error has occurred!
@@ -126,7 +155,12 @@ export const App = () => {
                 </Ons.Button>
               </div>
             </Ons.AlertDialog>
-            <ons-button>button</ons-button>
+            <ons-button>button</ons-button> */}
+
+            <Ons.BottomToolbar modifier="material" className="bot-toolbar">
+              <Ons.Button className="diagnose-now"><img src={bloodicon} className="blood-icon"></img></Ons.Button>
+            </Ons.BottomToolbar>
+            
 
           </Ons.Page>
         }

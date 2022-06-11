@@ -70,15 +70,15 @@ export const App = () => {
             </ons-toolbar>
 
             <div>Some content</div>
-            <div style={{ textAlign: "center" }}>
+            {/* <div style={{ textAlign: "center" }}>
               <StyledSVG />
-            </div>
+            </div> */}
             {/*
             <div style={{ textAlign: "center", marginTop: "10px" }}>
               <StyledImg src={Image} width={"200px"} />
             </div>
             */}
-            <div
+            {/* <div
               style={{
                 textAlign: "center",
                 marginTop: "10px",
@@ -89,9 +89,9 @@ export const App = () => {
             >
               Hello! {currentUser.name}
             </div>
-            <div style={{ marginTop: "10px" }}>{JSON.stringify(user)}</div>
+            <div style={{ marginTop: "10px" }}>{JSON.stringify(user)}</div> */}
 
-            <div>Hello World</div>
+            
 
             <Ons.Button>
               Button

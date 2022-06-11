@@ -8826,7 +8826,7 @@ react-lifecycles-compat@^3.0.4:
 
 react-onsenui@^1.12.0:
   version "1.12.0"
-  resolved "https://registry.npmjs.org/react-onsenui/-/react-onsenui-1.12.0.tgz"
+  resolved "https://registry.yarnpkg.com/react-onsenui/-/react-onsenui-1.12.0.tgz#7e201406241304d88317d2f1377e20bdb4da7a30"
   integrity sha512-qRYN+fwudZyaujKHecuohpyBpNCX2IB1gE/9A+FDd+YS+/TwXFC+0NA2IFkwYRYnetqAu3QxJanI/AUB1pq9UQ==
   dependencies:
     prop-types "^15.6.0"

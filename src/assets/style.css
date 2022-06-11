@@ -168,19 +168,19 @@
 .diagnosis-history,
 .meal-history {
     border-radius: 20px;
-    width: 45%;
+    /* width: 45%; */
     height: 110px;
-    /* background-color: rgba(255,255,255,0.5); */
+    background-color: rgba(255,255,255,0.7);
     box-shadow: 0px 0px 5px 1px rgb(230, 230, 230);
     padding: 20px;
     font-size: 20px;
     color:#2E0249;
     /* font-weight: bold; */
-    background-image: url('../assets/meal-history.png');
+    /* background-image: url('../assets/meal-history.png'); */
 
 }
 
 .diagnosis-history {
-    background-image: url('../assets/diagnosis-history.png');
+    /* background-image: url('../assets/diagnosis-history.png'); */
     /* background-size: cover; */
 }

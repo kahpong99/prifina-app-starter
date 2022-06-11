@@ -15,6 +15,8 @@ import 'onsenui/esm/elements/ons-bottom-toolbar';
 import pic from "../src/assets/diabetes_black.png"
 import usericon from '../src/assets/user-icon.png';
 import bloodicon from '../src/assets/blood-icon.png';
+import diagnosisimage from '../src/assets/diagnosis-history.png';
+import mealimage from '../src/assets/meal-history.png';
 import 'bootstrap/dist/css/bootstrap.css';
 import "../src/assets/style.css";
 import Line from "./components/Line.js";
@@ -156,6 +158,29 @@ export const App = () => {
               </div>
             </Ons.AlertDialog>
             <ons-button>button</ons-button> */}
+
+            <div className="date-range">
+              <div className="date-range__label">Select Date Range</div>
+              <div className="date-range__divider"></div>
+              <div className="date-range__value">12 May 2022 <br/> 12 Jun 2022</div>
+              <div>TO</div>
+            </div>
+
+            <div className="graph-container">
+              <Line></Line>
+
+            </div>
+
+            {/* <div className="diabetic-status">
+              <div className="diabetic-status__label">Blood Sugar Level</div>
+
+              <div className="diabetic-status__value">10.6%</div>
+            </div> */}
+
+            <div className="other-tools">
+              <div className="diagnosis-history" >Diagnosis History</div>
+              <div className="meal-history" >Dietary Plan</div>
+            </div>
 
             <Ons.BottomToolbar modifier="material" className="bot-toolbar">
               <Ons.Button className="diagnose-now"><img src={bloodicon} className="blood-icon"></img></Ons.Button>

@@ -29,14 +29,14 @@ export default function Line () {
 
   return (
     <>
-      <button onClick={randomizeData}>Randomize Data</button>
+      {/* <button onClick={randomizeData}>Randomize Data</button>
       <br />
-      <br />
+      <br /> */}
       <Box>
         <Chart data={data} series={series} axes={axes} tooltip />
       </Box>
-      <br />
-      <SyntaxHighlighter code={sourceCode} />
+      {/* <br /> */}
+      {/* <SyntaxHighlighter code={sourceCode} /> */}
     </>
   )
 }

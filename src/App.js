@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import { ReactComponent as Logo } from "./assets/prifina.svg";
+import {ThemeProvider} from "@blend-ui/core";
+// import {MDXCreateElement} from '@mdx-js/react';
+import * as Blend from "@blend-ui/core";
 //import Image from "./assets/fingerpori.png";
 
 import { usePrifina } from "@prifina/hooks";
@@ -40,27 +43,40 @@ export const App = () => {
   console.log(currentUser, user);
 
   return (
-    <StyledBox role={"remote"}>
-      <div style={{ textAlign: "center" }}>
-        <StyledSVG />
-      </div>
-      {/*
-      <div style={{ textAlign: "center", marginTop: "10px" }}>
-        <StyledImg src={Image} width={"200px"} />
-      </div>
-      */}
-      <div
-        style={{
-          textAlign: "center",
-          marginTop: "10px",
-          fontSize: "36px",
-          fontWeight: "bold",
-          fontFamily: "Open Sans",
-        }}
-      >
-        Hello! {currentUser.name}
-      </div>
-      <div style={{ marginTop: "10px" }}>{JSON.stringify(user)}</div>
-    </StyledBox>
+    
+
+    <ThemeProvider>
+      <StyledBox role={"remote"}>
+        <div style={{ textAlign: "center" }}>
+          <StyledSVG />
+        </div>
+        {/*
+        <div style={{ textAlign: "center", marginTop: "10px" }}>
+          <StyledImg src={Image} width={"200px"} />
+        </div>
+        */}
+        <div
+          style={{
+            textAlign: "center",
+            marginTop: "10px",
+            fontSize: "36px",
+            fontWeight: "bold",
+            fontFamily: "Open Sans",
+          }}
+        >
+          Hello! {currentUser.name}
+        </div>
+        <div style={{ marginTop: "10px" }}>{JSON.stringify(user)}</div>
+      </StyledBox>
+
+        
+      <Blend.Button variation="outline">
+        Outline
+      </Blend.Button>
+
+      
+
+
+    </ThemeProvider>
   );
 };

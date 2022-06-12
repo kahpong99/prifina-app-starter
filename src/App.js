@@ -178,8 +178,8 @@ export const App = () => {
             </div> */}
 
             <div className="other-tools">
-              <div style={{backgroundImage: `url(${diagnosisimage})`, backgroundRepeat: 'no-repeat', backgroundSize: '100px', width: '45%', backgroundPosition: '50%'}}><div className="diagnosis-history">Diagnosis History</div></div> 
-              <div style={{backgroundImage: `url(${mealimage})`, backgroundRepeat: 'no-repeat', backgroundSize: '100px', width: '45%', backgroundPosition: '50%'}}><div className="meal-history">Dietary Plan</div></div> 
+              <div style={{backgroundImage: `url(${diagnosisimage})`, backgroundRepeat: 'no-repeat', backgroundSize: '100px', width: '47%', backgroundPosition: '50%'}}><div className="diagnosis-history">Diagnosis History</div></div> 
+              <div style={{backgroundImage: `url(${mealimage})`, backgroundRepeat: 'no-repeat', backgroundSize: '100px', width: '47%', backgroundPosition: '50%'}}><div className="meal-history">Dietary Plan</div></div> 
             </div>
 
             <Ons.BottomToolbar modifier="material" className="bot-toolbar">
